@@ -3,6 +3,7 @@
 ############
 # 
 '''
+新增基于yarn restful API的超时任务扫描然然后杀掉占用资源过多的任务的小程序(scan applications based on yarn restful api, and kill the apps which are overtime and occupy too much resource)
 输入最小超时阈值（小时）任务的队列资源占比危险阈值(0~1） 任务的集群资源占比危险阈值(0~1），然后超过任何一个阈值的已经超时还未完成的任务，杀掉，并且记录任务相关的信息便于后续审计。
 '''
 import os
